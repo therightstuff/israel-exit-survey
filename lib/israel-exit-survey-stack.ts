@@ -1,6 +1,7 @@
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { BackupPlan, BackupPlanRule, BackupResource } from 'aws-cdk-lib/aws-backup';
 import { Construct } from 'constructs';
+import { StaticWebsite } from './static-website';
 
 export class IsraelExitSurveyStack extends Stack {
 
@@ -22,6 +23,8 @@ export class IsraelExitSurveyStack extends Stack {
           ]
         });
     }
+
+    const staticWebsite = new StaticWebsite(stack);
 
   }
 }
