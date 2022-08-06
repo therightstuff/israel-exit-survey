@@ -1,0 +1,15 @@
+{
+   "test-eu": {
+        "disableDdbBackup": true,
+        "corsOrigin": "*",
+        "region": {
+            "region": "eu-west-1",
+            "account": "{{AWS_ACCOUNT_NO}}"
+        },
+        "mailgun": {
+            "domain": "{{DOMAIN}}",
+            "from": "israel-exit-survey@{{DOMAIN}}",
+            "api_key": "{{MAILGUN_API_KEY}}"
+        }
+    }
+}
